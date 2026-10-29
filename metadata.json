@@ -1,0 +1,6 @@
+{
+  "name": "PayShield - AI Autonomous Fraud Defense & Command Center",
+  "description": "Next-generation fintech cybersecurity and cost-aware fraud decision engine comparing LightGBM, XGBoost, and Deep Ensembles with Three.js 3D architecture, real-time command center, and Gemini AI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #f1f5f9;
+    background-color: #030712; /* Deep void midnight */
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  code, kbd, samp, pre, .font-mono {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Universal select & option contrast enforcement */
+  select, select option {
+    background-color: #090d16 !important;
+    color: #f8fafc !important;
+  }
+
+  select:focus {
+    outline: none !important;
+  }
+
+  option {
+    background-color: #090d16 !important;
+    color: #f8fafc !important;
+    padding: 8px 12px;
+  }
+
+  option:hover, option:focus, option:checked {
+    background-color: #1e293b !important;
+    color: #38bdf8 !important;
+  }
+}
+
+/* Futuristic glassmorphic surface helpers */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(225, 29, 72, 0.25);
+  box-shadow: 0 0 25px -5px rgba(225, 29, 72, 0.15);
+}
+
+.electric-glow {
+  box-shadow: 0 0 20px -3px rgba(225, 29, 72, 0.35);
+}
+
+.neon-cyan-glow {
+  box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.35);
+}
+
+/* Custom cyber scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #030712;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
